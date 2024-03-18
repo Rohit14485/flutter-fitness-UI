@@ -6,6 +6,11 @@ class homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<String> imagePaths = [
+      'assets/image1.jpeg',
+      'assets/image2.jpeg',
+      'assets/image3.jpeg',
+    ];
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: const [
@@ -210,7 +215,7 @@ class homepage extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 20),
-            child: boxes(),
+            child: boxes(imagePaths),
           ),
           SizedBox(
             height: 30,
@@ -236,7 +241,7 @@ class homepage extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 20),
-            child: boxes(),
+            child: boxes(imagePaths),
           ),
           SizedBox(
             height: 30,
@@ -262,7 +267,7 @@ class homepage extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 20),
-            child: boxes(),
+            child: boxes(imagePaths),
           ),
         ],
       ),

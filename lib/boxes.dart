@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-SizedBox boxes() {
+SizedBox boxes(List<String> listofimage) {
   return SizedBox(
     height: 300,
     width: double.infinity,
@@ -15,7 +15,10 @@ SizedBox boxes() {
             child: Container(
               height: 500,
               width: 270,
-              color: Colors.black,
+              color: Colors.blue,
+              child: Image(
+                image: AssetImage(listofimage[index]),
+              ),
             ),
           ),
         );
